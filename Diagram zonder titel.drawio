@@ -5,7 +5,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="uuadQWOrU6dBYs2lNf1F-1" value="Vertical Tree Layout" style="swimlane;startSize=20;horizontal=1;childLayout=treeLayout;horizontalTree=0;sortEdges=1;resizable=0;containerType=tree;fontSize=12;" parent="1" vertex="1">
-          <mxGeometry x="190" y="110" width="620" height="370" as="geometry" />
+          <mxGeometry x="190" y="110" width="490" height="370" as="geometry" />
         </mxCell>
         <mxCell id="uuadQWOrU6dBYs2lNf1F-7" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="uuadQWOrU6dBYs2lNf1F-1" source="uuadQWOrU6dBYs2lNf1F-2" target="fQn3m3HD-wfSnsIIZUHA-2" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -33,11 +33,6 @@
         <mxCell id="fQn3m3HD-wfSnsIIZUHA-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="uuadQWOrU6dBYs2lNf1F-1" source="fQn3m3HD-wfSnsIIZUHA-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="320" y="230" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="L-A0wQ0KRUmd61T0XK4q-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" parent="uuadQWOrU6dBYs2lNf1F-1" source="fQn3m3HD-wfSnsIIZUHA-2" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="600" y="150" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="fQn3m3HD-wfSnsIIZUHA-2" value="Sorteren" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="uuadQWOrU6dBYs2lNf1F-1" vertex="1">
