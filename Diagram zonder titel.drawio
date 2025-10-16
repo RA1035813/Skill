@@ -18,7 +18,7 @@
             <mxPoint x="1558" y="130" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TtzZn9678wBH-mazLMvE-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="uuadQWOrU6dBYs2lNf1F-1" source="uuadQWOrU6dBYs2lNf1F-2">
+        <mxCell id="TtzZn9678wBH-mazLMvE-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="uuadQWOrU6dBYs2lNf1F-1" source="uuadQWOrU6dBYs2lNf1F-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="170" y="130" as="targetPoint" />
           </mxGeometry>
@@ -81,7 +81,7 @@
             <mxPoint x="1158" y="220" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TtzZn9678wBH-mazLMvE-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="uuadQWOrU6dBYs2lNf1F-1" source="TtzZn9678wBH-mazLMvE-1">
+        <mxCell id="TtzZn9678wBH-mazLMvE-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="uuadQWOrU6dBYs2lNf1F-1" source="TtzZn9678wBH-mazLMvE-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1040" y="300" as="targetPoint" />
           </mxGeometry>
@@ -110,7 +110,7 @@
         <mxCell id="TtzZn9678wBH-mazLMvE-45" value="Afvalbak met valluiken" style="whiteSpace=wrap;html=1;align=center;" parent="uuadQWOrU6dBYs2lNf1F-1" vertex="1">
           <mxGeometry x="1199.5999755859375" y="310" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="38AjIDq5AG7g1LuIhKFO-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="uuadQWOrU6dBYs2lNf1F-1" source="tvMrnkH4C3fiiqYqa-1t-1" target="38AjIDq5AG7g1LuIhKFO-1">
+        <mxCell id="38AjIDq5AG7g1LuIhKFO-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="uuadQWOrU6dBYs2lNf1F-1" source="tvMrnkH4C3fiiqYqa-1t-1" target="38AjIDq5AG7g1LuIhKFO-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="tvMrnkH4C3fiiqYqa-1t-1" value="loopband met kleppen die bepaald naar welke vuilbak" style="whiteSpace=wrap;html=1;align=center;" parent="uuadQWOrU6dBYs2lNf1F-1" vertex="1">
@@ -167,29 +167,29 @@
         <mxCell id="s8VMjZoSvVtw1x2t7APu-1" value="Luxe vs Basic" style="whiteSpace=wrap;html=1;align=center;" parent="uuadQWOrU6dBYs2lNf1F-1" vertex="1">
           <mxGeometry x="1447.9999755859376" y="290" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="38AjIDq5AG7g1LuIhKFO-1" value="afvalbakken ruiden op bepaald tijdstip naar groote container" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="uuadQWOrU6dBYs2lNf1F-1">
+        <mxCell id="38AjIDq5AG7g1LuIhKFO-1" value="afvalbakken rijden op bepaald tijdstip naar grote container" style="whiteSpace=wrap;html=1;align=center;" parent="uuadQWOrU6dBYs2lNf1F-1" vertex="1">
           <mxGeometry x="1561" y="420" width="110" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="TtzZn9678wBH-mazLMvE-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="uuadQWOrU6dBYs2lNf1F-1" source="TtzZn9678wBH-mazLMvE-69">
+        <mxCell id="TtzZn9678wBH-mazLMvE-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="uuadQWOrU6dBYs2lNf1F-1" source="TtzZn9678wBH-mazLMvE-69" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="70" y="210" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TtzZn9678wBH-mazLMvE-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="uuadQWOrU6dBYs2lNf1F-1" source="TtzZn9678wBH-mazLMvE-69">
+        <mxCell id="TtzZn9678wBH-mazLMvE-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="uuadQWOrU6dBYs2lNf1F-1" source="TtzZn9678wBH-mazLMvE-69" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="210" y="210" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TtzZn9678wBH-mazLMvE-69" value="Robots" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="uuadQWOrU6dBYs2lNf1F-1">
+        <mxCell id="TtzZn9678wBH-mazLMvE-69" value="Robots" style="whiteSpace=wrap;html=1;align=center;" parent="uuadQWOrU6dBYs2lNf1F-1" vertex="1">
           <mxGeometry x="120" y="130" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="TtzZn9678wBH-mazLMvE-71" value="Afval zakken buiten zetten" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="uuadQWOrU6dBYs2lNf1F-1">
+        <mxCell id="TtzZn9678wBH-mazLMvE-71" value="Afval zakken buiten zetten" style="whiteSpace=wrap;html=1;align=center;" parent="uuadQWOrU6dBYs2lNf1F-1" vertex="1">
           <mxGeometry x="20" y="210" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="TtzZn9678wBH-mazLMvE-73" value="Rijden naar grote container en kappen daar uit" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="uuadQWOrU6dBYs2lNf1F-1">
+        <mxCell id="TtzZn9678wBH-mazLMvE-73" value="Rijden naar grote container en kappen daar uit" style="whiteSpace=wrap;html=1;align=center;" parent="uuadQWOrU6dBYs2lNf1F-1" vertex="1">
           <mxGeometry x="160" y="210" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="TtzZn9678wBH-mazLMvE-75" value="Robotarm" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="uuadQWOrU6dBYs2lNf1F-1">
+        <mxCell id="TtzZn9678wBH-mazLMvE-75" value="Robotarm" style="whiteSpace=wrap;html=1;align=center;" parent="uuadQWOrU6dBYs2lNf1F-1" vertex="1">
           <mxGeometry x="989.6" y="300" width="100" height="40" as="geometry" />
         </mxCell>
       </root>
