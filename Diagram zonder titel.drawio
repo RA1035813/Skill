@@ -41,6 +41,11 @@
             <mxPoint x="360" y="220" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="Hg-SEjaal67cHaabUFrg-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="uuadQWOrU6dBYs2lNf1F-1" source="uuadQWOrU6dBYs2lNf1F-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="uuadQWOrU6dBYs2lNf1F-3" value="Dashboard" style="whiteSpace=wrap;html=1;" parent="uuadQWOrU6dBYs2lNf1F-1" vertex="1">
           <mxGeometry x="653.5999755859375" y="130" width="100" height="40" as="geometry" />
         </mxCell>
@@ -201,6 +206,9 @@
         </mxCell>
         <mxCell id="TtzZn9678wBH-mazLMvE-78" value="Afval buitenzetten" style="whiteSpace=wrap;html=1;align=center;" parent="uuadQWOrU6dBYs2lNf1F-1" vertex="1">
           <mxGeometry x="100" y="130" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg-SEjaal67cHaabUFrg-7" value="Website" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="uuadQWOrU6dBYs2lNf1F-1">
+          <mxGeometry x="200" y="221.5" width="100" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
