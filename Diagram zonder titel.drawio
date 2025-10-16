@@ -61,10 +61,10 @@
         <mxCell id="yVaKKbbG8QXxI36X57Ng-4" value="Notification" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="uuadQWOrU6dBYs2lNf1F-1" vertex="1">
           <mxGeometry x="200" y="305" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="LhSS2RQ-TZcxeFxX7qKQ-1" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.84;exitY=0.925;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="uuadQWOrU6dBYs2lNf1F-3" edge="1">
+        <mxCell id="LhSS2RQ-TZcxeFxX7qKQ-1" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.62;exitY=0.925;exitDx=0;exitDy=0;exitPerimeter=0;" parent="uuadQWOrU6dBYs2lNf1F-1" source="uuadQWOrU6dBYs2lNf1F-3" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="420" as="sourcePoint" />
-            <mxPoint x="380" y="390" as="targetPoint" />
+            <mxPoint x="247" y="177" as="sourcePoint" />
+            <mxPoint x="243" y="290" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
