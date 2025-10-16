@@ -5,7 +5,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="uuadQWOrU6dBYs2lNf1F-1" value="Vertical Tree Layout" style="swimlane;startSize=20;horizontal=1;childLayout=treeLayout;horizontalTree=0;sortEdges=1;resizable=0;containerType=tree;fontSize=12;" parent="1" vertex="1">
-          <mxGeometry x="80" y="110" width="996" height="400" as="geometry" />
+          <mxGeometry x="50" y="100" width="996" height="400" as="geometry" />
         </mxCell>
         <mxCell id="TtzZn9678wBH-mazLMvE-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="uuadQWOrU6dBYs2lNf1F-1" source="uuadQWOrU6dBYs2lNf1F-2" target="TtzZn9678wBH-mazLMvE-1">
           <mxGeometry relative="1" as="geometry" />
@@ -19,6 +19,11 @@
         <mxCell id="TtzZn9678wBH-mazLMvE-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="uuadQWOrU6dBYs2lNf1F-1" source="uuadQWOrU6dBYs2lNf1F-3">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="80" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TtzZn9678wBH-mazLMvE-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="uuadQWOrU6dBYs2lNf1F-1" source="uuadQWOrU6dBYs2lNf1F-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="270" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="uuadQWOrU6dBYs2lNf1F-3" value="Dashbord" style="whiteSpace=wrap;html=1;" parent="uuadQWOrU6dBYs2lNf1F-1" vertex="1">
@@ -63,15 +68,6 @@
         <mxCell id="TtzZn9678wBH-mazLMvE-7" value="Afval wegen" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="uuadQWOrU6dBYs2lNf1F-1">
           <mxGeometry x="405" y="340" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="L53K-sSY9uPXc0actah1-7" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="uuadQWOrU6dBYs2lNf1F-1" source="uuadQWOrU6dBYs2lNf1F-3" target="L53K-sSY9uPXc0actah1-6">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="650" y="330" as="sourcePoint" />
-            <mxPoint x="460" y="200" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="L53K-sSY9uPXc0actah1-6" value="Meldingen wanneer vuilnis wordt opgehaald" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="uuadQWOrU6dBYs2lNf1F-1">
-          <mxGeometry x="204" y="221.5" width="100" height="40" as="geometry" />
-        </mxCell>
         <mxCell id="jSa4NRMW0xl6JtxYPrEU-1" value="sorteerkast" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="uuadQWOrU6dBYs2lNf1F-1">
           <mxGeometry x="610" y="220" width="100" height="40" as="geometry" />
         </mxCell>
@@ -111,6 +107,9 @@
             <mxPoint x="720" y="310" as="sourcePoint" />
             <mxPoint x="770" y="260" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="TtzZn9678wBH-mazLMvE-16" value="Meldingen wanneer afval wordt opgehaald" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="uuadQWOrU6dBYs2lNf1F-1">
+          <mxGeometry x="264" y="270" width="100" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
