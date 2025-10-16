@@ -42,7 +42,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="uuadQWOrU6dBYs2lNf1F-3" value="Dashboard" style="whiteSpace=wrap;html=1;" parent="uuadQWOrU6dBYs2lNf1F-1" vertex="1">
-          <mxGeometry x="653.5999755859375" y="130" width="100" height="40" as="geometry" />
+          <mxGeometry x="646.5999755859375" y="130" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="uuadQWOrU6dBYs2lNf1F-4" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;" parent="uuadQWOrU6dBYs2lNf1F-1" source="uuadQWOrU6dBYs2lNf1F-2" target="uuadQWOrU6dBYs2lNf1F-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -62,7 +62,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="uuadQWOrU6dBYs2lNf1F-5" value="Dataverzamelen" style="whiteSpace=wrap;html=1;" parent="uuadQWOrU6dBYs2lNf1F-1" vertex="1">
-          <mxGeometry x="793.5999755859375" y="130" width="100" height="40" as="geometry" />
+          <mxGeometry x="786.5999755859375" y="130" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="uuadQWOrU6dBYs2lNf1F-6" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;" parent="uuadQWOrU6dBYs2lNf1F-1" source="uuadQWOrU6dBYs2lNf1F-2" target="uuadQWOrU6dBYs2lNf1F-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -91,13 +91,13 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="TtzZn9678wBH-mazLMvE-1" value="Sorteren" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="uuadQWOrU6dBYs2lNf1F-1">
-          <mxGeometry x="989.5999755859375" y="130" width="100" height="40" as="geometry" />
+          <mxGeometry x="996.5999755859375" y="130" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="fQn3m3HD-wfSnsIIZUHA-9" value="AI camera" style="whiteSpace=wrap;html=1;align=center;" parent="uuadQWOrU6dBYs2lNf1F-1" vertex="1">
-          <mxGeometry x="919.5999755859375" y="220" width="100" height="40" as="geometry" />
+          <mxGeometry x="926.5999755859375" y="220" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="TtzZn9678wBH-mazLMvE-7" value="Afval wegen" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="uuadQWOrU6dBYs2lNf1F-1">
-          <mxGeometry x="865.5999755859375" y="370" width="100" height="40" as="geometry" />
+          <mxGeometry x="786.5999755859375" y="220" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="TtzZn9678wBH-mazLMvE-13" value="Sorteerassisten" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="uuadQWOrU6dBYs2lNf1F-1">
           <mxGeometry x="441.5999755859375" y="221.5" width="100" height="40" as="geometry" />
@@ -111,17 +111,17 @@
         <mxCell id="TtzZn9678wBH-mazLMvE-18" value="AI camera sorteert afval" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="uuadQWOrU6dBYs2lNf1F-1">
           <mxGeometry x="751.5999755859375" y="370" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="TtzZn9678wBH-mazLMvE-35" value="Baas bepaald toegang" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="uuadQWOrU6dBYs2lNf1F-1">
+        <mxCell id="TtzZn9678wBH-mazLMvE-35" value="Gebruiker moet kunnen inloggen" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="uuadQWOrU6dBYs2lNf1F-1">
           <mxGeometry x="310" y="221.5" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="TtzZn9678wBH-mazLMvE-45" value="Afvalbak met valluiken" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="uuadQWOrU6dBYs2lNf1F-1">
-          <mxGeometry x="1199.5999755859375" y="310" width="100" height="40" as="geometry" />
+          <mxGeometry x="1206.5999755859375" y="310" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="tvMrnkH4C3fiiqYqa-1t-1" value="loopband met kleppen die bepaald naar welke vuilbak" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="uuadQWOrU6dBYs2lNf1F-1">
           <mxGeometry x="1328" y="290" width="111" height="60" as="geometry" />
         </mxCell>
         <mxCell id="TtzZn9678wBH-mazLMvE-51" value="Sensoren" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="uuadQWOrU6dBYs2lNf1F-1">
-          <mxGeometry x="1059.5999755859375" y="220" width="100" height="40" as="geometry" />
+          <mxGeometry x="1066.5999755859375" y="220" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="TtzZn9678wBH-mazLMvE-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="uuadQWOrU6dBYs2lNf1F-1" source="TtzZn9678wBH-mazLMvE-53" target="jSa4NRMW0xl6JtxYPrEU-1">
           <mxGeometry relative="1" as="geometry" />
@@ -132,13 +132,13 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="TtzZn9678wBH-mazLMvE-53" value="Invoer" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="uuadQWOrU6dBYs2lNf1F-1">
-          <mxGeometry x="1199.5999755859375" y="130" width="100" height="40" as="geometry" />
+          <mxGeometry x="1206.5999755859375" y="130" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="TtzZn9678wBH-mazLMvE-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="uuadQWOrU6dBYs2lNf1F-1" source="jSa4NRMW0xl6JtxYPrEU-1" target="TtzZn9678wBH-mazLMvE-45">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="jSa4NRMW0xl6JtxYPrEU-1" value="sorteerkast" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="uuadQWOrU6dBYs2lNf1F-1">
-          <mxGeometry x="1199.5999755859375" y="220" width="100" height="40" as="geometry" />
+          <mxGeometry x="1206.5999755859375" y="220" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="TtzZn9678wBH-mazLMvE-58" value="Transportband" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="uuadQWOrU6dBYs2lNf1F-1">
           <mxGeometry x="1328" y="221.5" width="100" height="40" as="geometry" />
