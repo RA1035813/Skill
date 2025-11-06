@@ -409,7 +409,13 @@
             "target": {
               "cell": "80deed04-db03-4a42-80ad-380ca507db70",
               "port": "e8385817-b81d-433a-86de-3345f248c6f3"
-            }
+            },
+            "vertices": [
+              {
+                "x": 660,
+                "y": 240
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -696,6 +702,77 @@
               {
                 "x": 220,
                 "y": 490
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "http(s) post",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "26346a47-edc3-458d-9846-74a73920d032",
+                  "title": "No Suggestions available",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "No suggestions available for this context. Add one manually please",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "http(s) post"
+            ],
+            "id": "1a133547-4325-4320-b190-60d7b832930b",
+            "source": {
+              "cell": "9125da33-c03d-42b8-aaf7-60b39316ed1b",
+              "port": "ee8bd9cd-ba54-4a8c-8e15-2bababfc6727"
+            },
+            "target": {
+              "cell": "80deed04-db03-4a42-80ad-380ca507db70",
+              "port": "f8d9898b-5b97-4670-9f09-b1c0e16b5bd3"
+            },
+            "vertices": [
+              {
+                "x": 80,
+                "y": 310
               }
             ]
           },
@@ -1317,6 +1394,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 10
+    "threatTop": 11
   }
 }
