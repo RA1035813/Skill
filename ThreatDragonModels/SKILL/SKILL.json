@@ -43,6 +43,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -126,7 +127,6 @@
               ]
             },
             "id": "3ffc50a7-4518-4625-bca9-a2a36e77d368",
-            "zIndex": 1,
             "data": {
               "type": "tm.Store",
               "name": "SQL-database",
@@ -289,6 +289,417 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "http(s)request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "07ec7776-89d7-41d9-bcc2-de8944b6ab22",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                },
+                {
+                  "id": "997d6b74-c26d-4913-b106-7af2be91e74b",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "http(s)request"
+            ],
+            "id": "0fd21dba-c809-473e-a34b-d4e69d49ad84",
+            "source": {
+              "x": 250,
+              "y": 260
+            },
+            "target": {
+              "cell": "9125da33-c03d-42b8-aaf7-60b39316ed1b",
+              "port": "ee8bd9cd-ba54-4a8c-8e15-2bababfc6727"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Tijd ophalen",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Tijd ophalen"
+            ],
+            "id": "e92ffd7a-8a18-4417-969d-6aa53ca48225",
+            "source": {
+              "cell": "e0648483-afd5-49fc-94cf-af62bdf8e4a8",
+              "port": "fedce30d-97be-4f08-be8c-69aa319a4b86"
+            },
+            "target": {
+              "cell": "80deed04-db03-4a42-80ad-380ca507db70",
+              "port": "e8385817-b81d-433a-86de-3345f248c6f3"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "FastAPI",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "e282be51-9e75-4acc-aa99-2942eefc314b",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
+            },
+            "labels": [
+              "FastAPI"
+            ],
+            "id": "ff1a8018-b17c-45eb-a738-65696bf74cb8",
+            "source": {
+              "cell": "0bbf018d-87fd-4993-bca5-f5b13c1f1850",
+              "port": "ee8bd9cd-ba54-4a8c-8e15-2bababfc6727"
+            },
+            "target": {
+              "cell": "3ffc50a7-4518-4625-bca9-a2a36e77d368",
+              "port": "2c67a89b-9066-4f64-a737-922c15922d4c"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "FastAPI",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "41aa2e0b-0d43-4593-b48c-cf31f906d6b5",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
+            },
+            "labels": [
+              "FastAPI"
+            ],
+            "id": "9b7a6784-9de9-4ce4-a261-0f6de691bb34",
+            "source": {
+              "x": 640,
+              "y": 90
+            },
+            "target": {
+              "cell": "3ffc50a7-4518-4625-bca9-a2a36e77d368",
+              "port": "feefcff2-4f77-4233-b0ad-118b811d1601"
+            },
+            "vertices": [
+              {
+                "x": 1050,
+                "y": 350
+              },
+              {
+                "x": 890,
+                "y": 320
+              },
+              {
+                "x": 840,
+                "y": 300
+              },
+              {
+                "x": 800,
+                "y": 300
+              },
+              {
+                "x": 800,
+                "y": 380
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "FastAPI",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "279a8f6f-a4ff-4d93-9a2a-9de09e5b49cc",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
+            },
+            "labels": [
+              "FastAPI"
+            ],
+            "id": "bb29054f-dba8-411a-85ef-451a0307c446",
+            "source": {
+              "cell": "80deed04-db03-4a42-80ad-380ca507db70",
+              "port": "f8d9898b-5b97-4670-9f09-b1c0e16b5bd3"
+            },
+            "target": {
+              "cell": "3ffc50a7-4518-4625-bca9-a2a36e77d368",
+              "port": "22994a16-b641-4089-8832-fed202ea5634"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "FastAPI",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "51a6f40a-04da-4b8d-b73d-1cd28565071d",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
+            },
+            "labels": [
+              "FastAPI"
+            ],
+            "id": "00f8f8ca-d7db-41d8-a41f-1f13fecc4da7",
+            "source": {
+              "cell": "3ffc50a7-4518-4625-bca9-a2a36e77d368",
+              "port": "9e85cd73-ccae-4a7e-8523-9588bb8f26e6"
+            },
+            "target": {
+              "cell": "80deed04-db03-4a42-80ad-380ca507db70",
+              "port": "f8d9898b-5b97-4670-9f09-b1c0e16b5bd3"
+            },
+            "vertices": [
+              {
+                "x": 220,
+                "y": 490
+              }
+            ]
+          },
+          {
             "position": {
               "x": 910,
               "y": 190
@@ -309,6 +720,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -392,7 +804,6 @@
               ]
             },
             "id": "e0648483-afd5-49fc-94cf-af62bdf8e4a8",
-            "zIndex": 11,
             "data": {
               "type": "tm.Process",
               "name": "TimeServer",
@@ -451,6 +862,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -534,7 +946,6 @@
               ]
             },
             "id": "9125da33-c03d-42b8-aaf7-60b39316ed1b",
-            "zIndex": 12,
             "data": {
               "type": "tm.Actor",
               "name": "Browser",
@@ -568,6 +979,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -651,7 +1063,6 @@
               ]
             },
             "id": "80deed04-db03-4a42-80ad-380ca507db70",
-            "zIndex": 13,
             "data": {
               "type": "tm.Process",
               "name": "Dashboard",
@@ -688,6 +1099,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -771,7 +1183,6 @@
               ]
             },
             "id": "0bbf018d-87fd-4993-bca5-f5b13c1f1850",
-            "zIndex": 14,
             "data": {
               "type": "tm.Actor",
               "name": "Camera",
@@ -805,6 +1216,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -888,7 +1300,6 @@
               ]
             },
             "id": "b5463b70-ed3b-40e3-9414-860e81b90baa",
-            "zIndex": 15,
             "data": {
               "type": "tm.Actor",
               "name": "Sensoren",
@@ -899,13 +1310,6 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           }
         ]
@@ -913,6 +1317,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 3
+    "threatTop": 10
   }
 }
