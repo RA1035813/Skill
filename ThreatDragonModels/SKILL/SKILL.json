@@ -802,7 +802,13 @@
             "target": {
               "cell": "3ffc50a7-4518-4625-bca9-a2a36e77d368",
               "port": "feefcff2-4f77-4233-b0ad-118b811d1601"
-            }
+            },
+            "vertices": [
+              {
+                "x": 840,
+                "y": 340
+              }
+            ]
           },
           {
             "position": {
@@ -1573,6 +1579,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 17,
             "ports": {
               "groups": {
                 "top": {
@@ -1656,7 +1663,6 @@
               ]
             },
             "id": "ca1d121d-f543-4b95-9a84-c83db6a93452",
-            "zIndex": 17,
             "data": {
               "type": "tm.Actor",
               "name": "GewichtSensor",
