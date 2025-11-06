@@ -715,6 +715,96 @@
             }
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "FastAPI",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "FastAPI"
+            ],
+            "id": "927f479c-5d2c-4fba-8471-d542d415a124",
+            "source": {
+              "cell": "4c60b104-801d-4c11-8e13-8f0fc2f32c2b",
+              "port": "9d377160-26a0-423c-ac84-5337872fed15"
+            },
+            "target": {
+              "cell": "80deed04-db03-4a42-80ad-380ca507db70",
+              "port": "e8385817-b81d-433a-86de-3345f248c6f3"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "FastAPI",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "FastAPI"
+            ],
+            "id": "0f909338-fb5b-4602-a7e5-e7b5a8bb3f86",
+            "source": {
+              "cell": "ca1d121d-f543-4b95-9a84-c83db6a93452",
+              "port": "9ec895d6-49bd-4d39-9a3b-784b41fa5fb5"
+            },
+            "target": {
+              "cell": "3ffc50a7-4518-4625-bca9-a2a36e77d368",
+              "port": "feefcff2-4f77-4233-b0ad-118b811d1601"
+            }
+          },
+          {
             "position": {
               "x": 910,
               "y": 190
@@ -1460,6 +1550,123 @@
                 "spoofing": 1,
                 "repudiation": 0
               }
+            }
+          },
+          {
+            "position": {
+              "x": 733,
+              "y": 17
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "GewichtSensor"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "da7f6e69-9bf6-4d67-9106-805434d3059d"
+                },
+                {
+                  "group": "right",
+                  "id": "018cc0e0-e9a9-4b4b-982c-70818660ea6c"
+                },
+                {
+                  "group": "bottom",
+                  "id": "9ec895d6-49bd-4d39-9a3b-784b41fa5fb5"
+                },
+                {
+                  "group": "left",
+                  "id": "dfea3eb0-8de4-483e-a345-72070619624c"
+                }
+              ]
+            },
+            "id": "ca1d121d-f543-4b95-9a84-c83db6a93452",
+            "zIndex": 17,
+            "data": {
+              "type": "tm.Actor",
+              "name": "GewichtSensor",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
             }
           }
         ]
