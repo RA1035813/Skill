@@ -1,0 +1,23 @@
+CREATE TABLE Users(
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    userName VARCHAR(255) NOT NULL,
+    score BIGINT NULL,
+    administrator BOOLEAN NOT NULL
+);
+ALTER TABLE
+    Users ADD UNIQUE users_username_unique(userName);
+CREATE TABLE Afval(
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY
+);
+CREATE TABLE AfvalType(
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    type VARCHAR(255) NOT NULL,
+    gewicht INT NOT NULL,
+    tijd DATETIME NOT NULL
+);
+ALTER TABLE
+    AfvalType ADD UNIQUE afvaltype_tijd_unique(tijd);
+ALTER TABLE
+    Afval ADD CONSTRAINT afval_id_foreign FOREIGN KEY(id) REFERENCES AfvalType(id);
+ALTER TABLE
+    Users ADD CONSTRAINT users_id_foreign FOREIGN KEY(id) REFERENCES Afval(id);
