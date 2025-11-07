@@ -1,5 +1,6 @@
 from fastapi import APIRouter
 import database
+from database import execute_sql_query
 import functies.eersteFuncties
 import models.models
 # from models import model
@@ -44,39 +45,107 @@ def get_totaal():
     weights_to_return.append(dictionary)
     return {"gewicht": weights_to_return}
 
+# @SKILL.get("/totaal/overzicht")
+# def get_overzicht():
+#     query = queries.afval_overzicht
+#     overzichten = database.execute_sql_query(query)
+#     if isinstance(overzichten, Exception):        return overzichten, 500
+#     overzichten_to_return = []
+#     for overzicht in overzichten:        dictionary = {"userName": overzicht[0], "type": overzicht[1], "gewicht": overzicht[2], "maand": overzicht[3], }
+#     overzichten_to_return.append(dictionary)
+#     return {"overzicht": overzichten_to_return}
 @SKILL.get("/totaal/overzicht")
 def get_overzicht():
     query = queries.afval_overzicht
     overzichten = database.execute_sql_query(query)
-    if isinstance(overzichten, Exception):        return overzichten, 500
+
+    if isinstance(overzichten, Exception):
+        return {"error": str(overzichten)}, 500
+
     overzichten_to_return = []
-    for overzicht in overzichten:        dictionary = {"userName": overzicht[0], "type": overzicht[1], "gewicht": overzicht[2], "maand": overzicht[3], }
-    overzichten_to_return.append(dictionary)
+    for overzicht in overzichten:
+        dictionary = {
+            "userName": overzicht[0],
+            "type": overzicht[1],
+            "gewicht": overzicht[2],
+            "maand": overzicht[3],
+        }
+        overzichten_to_return.append(dictionary)
+
     return {"overzicht": overzichten_to_return}
+
+
+
+# @SKILL.get("/user")
+# def get_userData(user: str, datum: str = None):
+#     if datum == None:
+#         datum = '2025-11'
+#         # datum = functies.eersteFuncties.getDate()
+#     query = queries.afval_totaal_users
+#     users = database.execute_sql_query(query, (user, datum,))
+#     if isinstance(users, Exception):        return users, 500
+#     users_to_return = []
+#     for user in users:        dictionary = {"userName": user[0], "afvaltype": user[1], "gewicht": user[2], "tijd": user[3], }
+#     users_to_return.append(dictionary)
+#     return {"overzicht": users_to_return}
 
 @SKILL.get("/user")
 def get_userData(user: str, datum: str = None):
-    if datum == None:
+    """
+    Haal per user de afvaldata op van een specifieke maand.
+    datum: 'YYYY-MM' format, bv '2025-11'
+    """
+    if datum is None:
         datum = '2025-11'
-        # datum = functies.eersteFuncties.getDate()
-    query = queries.afval_totaal_users
-    users = database.execute_sql_query(query, (user, datum,))
-    if isinstance(users, Exception):        return users, 500
+
+    query = """
+    SELECT u.userName, t.type AS afvaltype, t.gewicht, t.tijd
+    FROM Users u
+    JOIN Afval a ON u.id = a.id
+    JOIN AfvalType t ON a.id = t.id
+    WHERE u.userName = :user AND DATE_FORMAT(t.tijd, '%Y-%m') = :datum
+    ORDER BY t.tijd;
+    """
+
+    result = execute_sql_query(query, {"user": user, "datum": datum})
+    if isinstance(result, Exception):
+        return {"error": str(result)}, 500
+
     users_to_return = []
-    for user in users:        dictionary = {"userName": user[0], "afvaltype": user[1], "gewicht": user[2], "tijd": user[3], }
-    users_to_return.append(dictionary)
+    for row in result:
+        users_to_return.append({
+            "userName": row[0],
+            "afvaltype": row[1],
+            "gewicht": row[2],
+            "tijd": row[3].strftime("%Y-%m-%d %H:%M:%S") if row[3] else None
+        })
+
     return {"overzicht": users_to_return}
 
+
+# @SKILL.get("/test")
+# def get_test():
+#     query = queries.testQuery
+#     users = database.execute_sql_query(query)
+#     if isinstance(users, Exception):        return users, 500
+#     users_to_return = []
+#     for user in users:        dictionary = {"userName": user[0], "afvaltype": user[1], "gewicht": user[2], "tijd": user[3], }
+#     users_to_return.append(dictionary)
+#     return {"overzicht": users_to_return}
 
 @SKILL.get("/test")
 def get_test():
     query = queries.testQuery
     users = database.execute_sql_query(query)
-    if isinstance(users, Exception):        return users, 500
+    if isinstance(users, Exception):
+        return users, 500
     users_to_return = []
-    for user in users:        dictionary = {"userName": user[0], "afvaltype": user[1], "gewicht": user[2], "tijd": user[3], }
-    users_to_return.append(dictionary)
+    for user in users:
+        if len(user) >= 1:   # check dat er minimaal 1 kolom is
+            dictionary = {"id": user[0]}  # want Users table heeft alleen id, userName etc.
+            users_to_return.append(dictionary)
     return {"overzicht": users_to_return}
+
 
 
 # @SKILL.get("/titel/boek")

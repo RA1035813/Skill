@@ -1,15 +1,16 @@
+# from typing import List
 from pydantic import BaseModel
-from datetime import date
+from datetime import datetime
 
-
-class AfvalType(BaseModel):
-    id: int
-    type: str
+class AfvalUser(BaseModel):
+    userName: str
+    afvaltype: str
     gewicht: int
-    tijd: date
+    tijd: datetime
 
 class Afval(BaseModel):
     id: int
+
 class Users(BaseModel):
     id: int
     userName: str
