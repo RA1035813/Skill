@@ -1,6 +1,7 @@
-# from typing import List
+from typing import List
 from pydantic import BaseModel
 from datetime import datetime
+from typing import Optional
 
 class AfvalUser(BaseModel):
     userName: str
@@ -12,10 +13,13 @@ class Afval(BaseModel):
     id: int
 
 class Users(BaseModel):
-    id: int
+    id: Optional[int] = None
     userName: str
-    score: int
-    administrator: bool
+    score: Optional[int] = 0
+    administrator: Optional[bool] = False
 
-
+class UserCreate(BaseModel):
+    userName: str
+    score: int = 0
+    administrator: bool = False
 

@@ -75,3 +75,5 @@ SELECT u.userName, t.type, t.gewicht, DATE_FORMAT(t.tijd, '%Y-%m') AS maand
 FROM Users u
     JOIN Afval a   ON u.id = a.id
     JOIN AfvalType t ON a.id = t.id ORDER BY u.userName, maand;
+
+-- inserts

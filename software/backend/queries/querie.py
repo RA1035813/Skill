@@ -22,3 +22,13 @@ afval_totaal_users = "SELECT u.userName, t.type AS afvaltype, t.gewicht, t.tijd 
 
 
 testQuery = "SELECT * FROM Users;"
+
+# insert:
+# Voeg nieuwe user toe
+# add_user = "INSERT INTO Users (userName, score, administrator) VALUES (%s, %s, %s);"
+add_user = "INSERT INTO Users (userName, score, administrator) VALUES (:userName, :score, :administrator);"
+
+
+# Voeg afval toe bij specifieke user
+add_afval = "INSERT INTO AfvalType (type, gewicht, tijd) VALUES (%s, %s, %s); INSERT INTO Afval (type_id, user_id) VALUES (%s, %s);"
+

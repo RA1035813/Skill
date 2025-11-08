@@ -30,7 +30,14 @@ def get_type():
     types = database.execute_sql_query(query)
     if isinstance(types, Exception):        return types, 500
     types_to_return = []
-    for type in types:        dictionary = {"userName": type[0], "afvaltype": type[1], "gewicht": type[2], "maand": type[3], }
+    for type in types:
+        dictionary = {
+            "userName": type["userName"],
+            "afvaltype": type["afvaltype"],
+            "gewicht": type["gewicht"],
+            "maand": type["maand"],
+        }
+
     types_to_return.append(dictionary)
     return {"types": types_to_return}
 
@@ -41,7 +48,13 @@ def get_totaal():
     weights = database.execute_sql_query(query)
     if isinstance(weights, Exception):        return weights, 500
     weights_to_return = []
-    for weight in weights:        dictionary = {"maand": weight[0], "totaal_gewicht": weight[1], }
+    for weight in weights:
+        dictionary = {
+            "maand": weight["maand"],
+            "totaal_gewicht": weight["totaal_gewicht"]
+        }
+
+
     weights_to_return.append(dictionary)
     return {"gewicht": weights_to_return}
 
@@ -65,10 +78,10 @@ def get_overzicht():
     overzichten_to_return = []
     for overzicht in overzichten:
         dictionary = {
-            "userName": overzicht[0],
-            "type": overzicht[1],
-            "gewicht": overzicht[2],
-            "maand": overzicht[3],
+            "userName": overzicht["userName"],
+            "type": overzicht["type"],
+            "gewicht": overzicht["gewicht"],
+            "maand": overzicht["maand"],
         }
         overzichten_to_return.append(dictionary)
 
@@ -90,7 +103,7 @@ def get_overzicht():
 #     return {"overzicht": users_to_return}
 
 @SKILL.get("/user")
-def get_userData(user: str, datum: str = None):
+def get_userData(userName: str, datum: str = None):
     """
     Haal per user de afvaldata op van een specifieke maand.
     datum: 'YYYY-MM' format, bv '2025-11'
@@ -107,17 +120,17 @@ def get_userData(user: str, datum: str = None):
     ORDER BY t.tijd;
     """
 
-    result = execute_sql_query(query, {"user": user, "datum": datum})
+    result = execute_sql_query(query, {"user": userName, "datum": datum})
     if isinstance(result, Exception):
         return {"error": str(result)}, 500
 
     users_to_return = []
     for row in result:
         users_to_return.append({
-            "userName": row[0],
-            "afvaltype": row[1],
-            "gewicht": row[2],
-            "tijd": row[3].strftime("%Y-%m-%d %H:%M:%S") if row[3] else None
+            "userName": row["userName"],
+            "afvaltype": row["afvaltype"],
+            "gewicht": row["gewicht"],
+            "tijd": row["tijd"].strftime("%Y-%m-%d %H:%M:%S") if row["tijd"] else None
         })
 
     return {"overzicht": users_to_return}
@@ -141,8 +154,11 @@ def get_test():
         return users, 500
     users_to_return = []
     for user in users:
-        if len(user) >= 1:   # check dat er minimaal 1 kolom is
-            dictionary = {"id": user[0]}  # want Users table heeft alleen id, userName etc.
+        if len(user) >= 1:
+            dictionary = {
+                "id": user["id"]
+            }
+
             users_to_return.append(dictionary)
     return {"overzicht": users_to_return}
 
@@ -157,3 +173,47 @@ def get_test():
 #     for boek in boeken:        dictionary = {"id": boek[0], "titel": boek[1], "auteur": boek[2], "prijs": boek[3], }
 #     boeken_to_return.append(dictionary)
 #     return {"boeken": boeken_to_return}
+
+# post
+
+# @boekenwinkel.post("/boeken")
+# def add_machine(boeken: models.model.boeken):
+#     query = queries.insert_boekenwinkel_query
+#     insert = database.execute_sql_query(query, (boeken.id, boeken.titel, boeken.auteur, boeken.prijs,))
+#     if insert == True:
+#         return boeken   else:
+#         return {"error": "Something went wrong..."}
+#
+
+
+# @SKILL.post("/user")
+# def add_user(user: models.models.Users):
+#     query = queries.add_user
+#     insert = database.execute_sql_query(
+#         query,
+#         (user.userName, user.score, user.administrator)
+#     )
+#     if insert == True:
+#         return user
+#     else:
+#         return {"error": "Something went wrong..."}
+
+    # if isinstance(insert, Exception):
+    #     return {"error": str(insert)}, 500
+    # return user
+
+
+from models.models import UserCreate
+
+@SKILL.post("/user")
+def add_user(user: UserCreate):
+    query = queries.add_user
+    insert = database.execute_sql_query(
+        query,
+        {"userName": user.userName, "score": user.score, "administrator": user.administrator}
+    )
+    if insert is True:
+        return user
+    return {"error": "Something went wrong..."}
+
+
