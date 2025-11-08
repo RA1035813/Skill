@@ -4,5 +4,6 @@
     <file url="file://$PROJECT_DIR$/Queries.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/Schema.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/inserts.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/shemaBeta.sql" dialect="MariaDB" />
   </component>
 </project>

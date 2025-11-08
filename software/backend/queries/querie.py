@@ -13,13 +13,7 @@ afval_overzicht = "SELECT u.userName, t.type, t.gewicht, DATE_FORMAT(t.tijd, '%Y
 afval_totaal_users = "SELECT u.userName, t.type AS afvaltype, t.gewicht, t.tijd FROM Users u  JOIN Afval a ON u.id = a.id JOIN AfvalType t ON a.id = t.id WHERE u.userName = %s AND t.tijd >= CONCAT(%s, '-01 00:00:00') AND t.tijd <  DATE_ADD(CONCAT(%s, '-01 00:00:00'), INTERVAL 1 MONTH);"
 
 
-# '2025-11'
-
-# old-query = "SELECT * FROM boekenwinkel.boeken WHERE titel = (%s);"
-# get_books_query = "SELECT * FROM boekenwinkel.boeken"
-#
-# insert_boekenwinkel_query = "INSERT INTO boekenwinkel.boeken(id, titel, auteur, prijs) VALUES (%s, %s, %s, %s);"
-
+get_user = " SELECT u.userName, t.type AS afvaltype, t.gewicht, t.tijd FROM Users u JOIN Afval a ON u.id = a.id JOIN AfvalType t ON a.id = t.id WHERE u.userName = :user AND DATE_FORMAT(t.tijd, '%Y-%m') = :datum ORDER BY t.tijd;"
 
 testQuery = "SELECT * FROM Users;"
 
