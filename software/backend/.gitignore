@@ -1,0 +1,17 @@
+# Verberg gevoelige omgevingsvariabelen
+.env
+
+# Python cachebestanden
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+venv/
+.env/
+.env.bak/
+.idea
+
+# Docker
+*.log
+*.pid

@@ -1,0 +1,42 @@
+services: # <--- DEZE HOOFDSLEUTEL ONTBRAK
+  mariadb:
+    build: ./database
+    container_name: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: SKILL
+      MYSQL_USER: TestUser
+      MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"
+    volumes:
+      - mariadb_data:/var/lib/mysql
+
+  backend:
+    build: ./backend
+    container_name: fastapi_backend
+    restart: always
+    depends_on:
+      - mariadb
+    env_file:
+      - ./backend/.env
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    command: /bin/sh -c "PYTHONPATH=$$PYTHONPATH:/usr/local/lib/python3.12/site-packages python -m uvicorn main:app --host 0.0.0.0 --port 8000"
+
+  frontend:
+    image: nginx:alpine
+    container_name: frontend
+    restart: always
+    depends_on:
+      - backend
+    volumes:
+      - ./frond-end:/usr/share/nginx/html:ro
+    ports:
+      - "8080:80"
+
+volumes:
+  mariadb_data:
