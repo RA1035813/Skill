@@ -1,6 +1,6 @@
-services:
+services: # <--- DEZE HOOFDSLEUTEL ONTBRAK
   mariadb:
-    image: mariadb:11.3
+    build: ./database
     container_name: mariadb
     restart: always
     environment:
@@ -11,7 +11,7 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - ./mariadb_data:/var/lib/mysql
+      - mariadb_data:/var/lib/mysql
 
   backend:
     build: ./backend
@@ -25,6 +25,7 @@ services:
       - "8000:8000"
     volumes:
       - ./backend:/app
+    command: /bin/sh -c "PYTHONPATH=$$PYTHONPATH:/usr/local/lib/python3.12/site-packages python -m uvicorn main:app --host 0.0.0.0 --port 8000"
 
   frontend:
     image: nginx:alpine
@@ -33,7 +34,7 @@ services:
     depends_on:
       - backend
     volumes:
-      - ./frontend:/usr/share/nginx/html:ro
+      - ./frond-end:/usr/share/nginx/html:ro
     ports:
       - "8080:80"
 

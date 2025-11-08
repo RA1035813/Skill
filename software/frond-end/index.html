@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>FutureSort Dashboard</title>
-    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CascadingStyleSheets/frütiger.css">
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="CascadingStyleSheets/frütiger.css" />
 </head>
 <body>
 <div class="header">
@@ -15,25 +15,41 @@
 <div class="dashboard">
     <div class="card">
         <h2>Vandaag ingezameld</h2>
-        <p><strong>Plastic:</strong> 5 kg</p>
-        <p><strong>Papier:</strong> 3 kg</p>
-        <button class="button">Meer details</button>
+        <div id="kg-per-type">
+            <!-- Afvaltype blokken worden hierin dynamisch geplaatst -->
+            <p>Loading...</p>
+        </div>
     </div>
     <div class="card">
         <h2>Top gebruikers</h2>
-        <ul>
-            <li>Jan: 12 kg</li>
-            <li>Marijke: 10 kg</li>
-        </ul>
-        <button class="button">Bekijk alle gebruikers</button>
+        <p id="top-users">Loading...</p>
+<!--        <button class="button">Bekijk alle gebruikers</button>-->
+        <button id="btn-refresh-users" class="button">Bekijk alle gebruikers</button>
     </div>
     <div class="card">
         <h2>Statistieken</h2>
-        <p><strong>Totaal gewicht:</strong> 150 kg</p>
-        <p><strong>Maand:</strong> November 2025</p>
-        <button class="button">Grafiek tonen</button>
+        <p><strong>Totaal gewicht vandaag:</strong> <span id="today-kg">0</span> kg</p>
+        <p><strong>Populairst afvaltype:</strong> <span id="top-afvaltype">N.v.t.</span></p>
+<!--        <button class="button">Grafiek tonen</button>-->
+        <button id="btn-refresh-stats" class="button">Grafiek tonen</button>
     </div>
 </div>
+
+<h3>Laatste stortingen</h3>
+<table id="recent-afval" style="width: 100%; border-collapse: collapse;">
+    <thead>
+    <tr style="background-color: #95cbee; color: #203440;">
+        <th>Datum/Tijd</th>
+        <th>Gebruiker</th>
+        <th>Type</th>
+        <th>Gewicht</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr><td colspan="4">Loading...</td></tr>
+    </tbody>
+</table>
+
 <script src="JavaScript/API.js"></script>
 </body>
 </html>
