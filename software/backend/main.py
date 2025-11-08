@@ -6,10 +6,19 @@ from routes import endpoint
 app = FastAPI(docs_url="/SKILL")
 origins = config.allowed_origins.split(",")
 
-# middleware
+# # middleware
+# app.add_middleware(
+#     CORSMiddleware, allow_origins=origins, allow_credentials=True, allow_methods=["GET", "POST"],
+#     allow_headers=["Content-Type", "Accept"], )
+# app.include_router(router=endpoint.SKILL)
+
 app.add_middleware(
-    CORSMiddleware, allow_origins=origins, allow_credentials=True, allow_methods=["GET", "POST"],
-    allow_headers=["Content-Type", "Accept"], )
+    CORSMiddleware,
+    allow_origins=["*"],  # In productie: beperk tot specifieke origin!
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 app.include_router(router=endpoint.SKILL)
 
 

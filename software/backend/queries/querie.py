@@ -24,5 +24,8 @@ add_user = "INSERT INTO Users (userName, score, administrator) VALUES (:userName
 
 
 # Voeg afval toe bij specifieke user
-add_afval = "INSERT INTO AfvalType (type, gewicht, tijd) VALUES (%s, %s, %s); INSERT INTO Afval (type_id, user_id) VALUES (%s, %s);"
+# add_afval = "INSERT INTO AfvalType (type, gewicht, tijd) VALUES (%s, %s, %s); INSERT INTO Afval (type_id, user_id) VALUES (%s, %s);"
 
+add_afvaltype = "INSERT INTO AfvalType (type, gewicht, tijd) VALUES (:type, :gewicht, :tijd);"
+
+add_afval = "INSERT INTO Afval (type_id, user_id) VALUES (:type_id, :user_id);"

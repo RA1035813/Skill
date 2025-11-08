@@ -8,6 +8,11 @@ from queries import querie as queries
 from models.models import UserCreate
 from functies import eersteFuncties
 
+from fastapi import APIRouter
+from sqlalchemy import text
+from models.models import AfvalCreate
+from database import engine
+
 SKILL = APIRouter()
 
 # GET
@@ -73,6 +78,7 @@ def get_userData(userName: str, datum: str = None):
 
     if datum is None:
         datum = '2025-11'
+        datum = functies.eersteFuncties.getDate()
     query = queries.get_user
     # query = """
     # SELECT u.userName, t.type AS afvaltype, t.gewicht, t.tijd
@@ -133,3 +139,31 @@ def add_user(user: UserCreate):
     return {"error": "Something went wrong..."}
 
 
+
+
+@SKILL.post("/afval")
+def add_afval(item: AfvalCreate):
+    try:
+        insert_type_query = queries.add_afvaltype
+        with database.engine.connect() as conn:
+            result = conn.execute(
+                text(insert_type_query),
+                {"type": item.type, "gewicht": item.gewicht, "tijd": item.tijd}
+            )
+            conn.commit()
+            type_id = result.lastrowid
+
+        insert_afval_query = queries.add_afval
+        success = database.execute_sql_query(
+            insert_afval_query,
+            {"type_id": type_id, "user_id": item.user_id}
+        )
+
+        if success:
+            return {"message": "Afval succesvol toegevoegd", "type_id": type_id, "user_id": item.user_id}
+        else:
+            return {"error": "Kon afval niet koppelen aan user"}
+
+    except Exception as e:
+        print("Error:", e)
+        return {"error": str(e)}

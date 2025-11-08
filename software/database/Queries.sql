@@ -77,3 +77,12 @@ FROM Users u
     JOIN AfvalType t ON a.id = t.id ORDER BY u.userName, maand;
 
 -- inserts
+# # add_user
+# INSERT INTO Users (userName, score, administrator) VALUES (:userName, :score, :administrator);
+#
+# # add_afvaltype
+# INSERT INTO AfvalType (type, gewicht, tijd) VALUES (:type, :gewicht, :tijd);
+#
+#
+# # add_afval
+# INSERT INTO Afval (type_id, user_id) VALUES (:type_id, :user_id);
