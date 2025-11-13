@@ -707,6 +707,218 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "GPIO PIN\n",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "GPIO PIN\n"
+            ],
+            "id": "aad2b22a-9492-415c-97a7-a95d1602f63e",
+            "source": {
+              "cell": "0bbf018d-87fd-4993-bca5-f5b13c1f1850",
+              "port": "ee8bd9cd-ba54-4a8c-8e15-2bababfc6727"
+            },
+            "target": {
+              "cell": "bcadc322-d6d8-4320-811c-73a3a81d39e1",
+              "port": "e201e27b-b75f-4e68-9860-51bc292a9fe6"
+            },
+            "vertices": [
+              {
+                "x": 440,
+                "y": 120
+              },
+              {
+                "x": 570,
+                "y": 330
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "GPIO PIN",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "GPIO PIN"
+            ],
+            "id": "b3d47d35-36c0-4e17-b837-833fb5927c54",
+            "source": {
+              "cell": "b5463b70-ed3b-40e3-9414-860e81b90baa",
+              "port": "ee8bd9cd-ba54-4a8c-8e15-2bababfc6727"
+            },
+            "target": {
+              "cell": "bcadc322-d6d8-4320-811c-73a3a81d39e1",
+              "port": "5788c198-17da-4cf7-8a7e-4660f196cc00"
+            },
+            "vertices": [
+              {
+                "x": 700,
+                "y": 180
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "http",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "http"
+            ],
+            "id": "7812ed21-f81d-4455-bd12-3a03368a8ff4",
+            "source": {
+              "cell": "bcadc322-d6d8-4320-811c-73a3a81d39e1",
+              "port": "e201e27b-b75f-4e68-9860-51bc292a9fe6"
+            },
+            "target": {
+              "cell": "4ea691eb-4114-443a-a08c-8ee641a36bf2",
+              "port": "c362456b-f544-423b-89ef-293e2f927e5e"
+            },
+            "vertices": [
+              {
+                "x": 530,
+                "y": 360
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "http",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "http"
+            ],
+            "id": "f8e04f7f-0864-4c06-b618-eb44c10f2e3c",
+            "source": {
+              "cell": "bcadc322-d6d8-4320-811c-73a3a81d39e1",
+              "port": "5788c198-17da-4cf7-8a7e-4660f196cc00"
+            },
+            "target": {
+              "cell": "4ea691eb-4114-443a-a08c-8ee641a36bf2",
+              "port": "c362456b-f544-423b-89ef-293e2f927e5e"
+            },
+            "vertices": [
+              {
+                "x": 580,
+                "y": 280
+              },
+              {
+                "x": 560,
+                "y": 280
+              }
+            ]
+          },
+          {
             "position": {
               "x": 10,
               "y": 90
@@ -1642,8 +1854,8 @@
                 "text": "AI model"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -1740,34 +1952,12 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": [
-                {
-                  "id": "b84440f4-e7ad-4fca-9478-ccb27f5b0d68",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Tampering",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 33,
-                  "score": ""
-                }
-              ],
-              "threatFrequency": {
-                "spoofing": 0,
-                "tampering": 0,
-                "repudiation": 0,
-                "informationDisclosure": 0,
-                "denialOfService": 0,
-                "elevationOfPrivilege": 0
-              }
+              "threats": []
             }
           }
         ]
@@ -1775,6 +1965,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 34
+    "threatTop": 31
   }
 }
