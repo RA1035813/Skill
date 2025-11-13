@@ -746,6 +746,102 @@
             }
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "GPIO pin",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "GPIO pin"
+            ],
+            "id": "42cc3475-f8ef-4067-ac8c-6afbe7a2fea5",
+            "source": {
+              "x": 400,
+              "y": 70
+            },
+            "target": {
+              "cell": "4c60b104-801d-4c11-8e13-8f0fc2f32c2b",
+              "port": "f9f99f12-2f7d-401d-bf61-1533950622d7"
+            },
+            "vertices": [
+              {
+                "x": 470,
+                "y": 90
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "GPIO pin",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "GPIO pin"
+            ],
+            "id": "c4651666-a6c6-4129-bea0-028cda55c0fd",
+            "source": {
+              "x": 630,
+              "y": 80
+            },
+            "target": {
+              "cell": "4c60b104-801d-4c11-8e13-8f0fc2f32c2b",
+              "port": "f9f99f12-2f7d-401d-bf61-1533950622d7"
+            }
+          },
+          {
             "position": {
               "x": 10,
               "y": 90
