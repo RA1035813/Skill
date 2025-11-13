@@ -1764,15 +1764,21 @@
                   "new": true,
                   "number": 25,
                   "score": ""
+                },
+                {
+                  "id": "cbaadce7-42dc-40a8-813a-40d5a483a0f9",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 26,
+                  "score": ""
                 }
               ]
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1894,19 +1900,6 @@
               "privilegeLevel": "",
               "threats": [
                 {
-                  "id": "b6bb19f1-c0f9-4161-aeb4-c8e1c6a74d1e",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Spoofing",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 20,
-                  "score": ""
-                },
-                {
                   "id": "4e12782c-c630-4dc1-b1d6-3d279a929ba8",
                   "title": "New STRIDE threat",
                   "status": "Open",
@@ -1960,7 +1953,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 0,
                 "tampering": 1,
                 "repudiation": 0,
                 "informationDisclosure": 1,
@@ -1974,6 +1967,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 25
+    "threatTop": 26
   }
 }
