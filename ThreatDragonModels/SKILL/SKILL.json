@@ -19,6 +19,27 @@
         "cells": [
           {
             "position": {
+              "x": 470,
+              "y": 395
+            },
+            "size": {
+              "width": 260,
+              "height": 130
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "870cec81-98e9-49a8-b319-ed32781a0713",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
               "x": 540,
               "y": 430
             },
@@ -175,46 +196,6 @@
                 "denialOfService": 0
               }
             }
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "labels": [
-              ""
-            ],
-            "id": "16586f6b-0611-4745-8f8a-79f6db95c555",
-            "source": {
-              "x": 390,
-              "y": 620
-            },
-            "target": {
-              "x": 421,
-              "y": 590
-            },
-            "vertices": [
-              {
-                "x": 430,
-                "y": 380
-              },
-              {
-                "x": 520,
-                "y": 350
-              },
-              {
-                "x": 980,
-                "y": 550
-              }
-            ]
           },
           {
             "shape": "trust-boundary-curve",
