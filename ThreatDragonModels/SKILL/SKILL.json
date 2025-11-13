@@ -19,17 +19,17 @@
         "cells": [
           {
             "position": {
-              "x": 470,
-              "y": 395
+              "x": 506.2499999999999,
+              "y": 395.0000000000009
             },
             "size": {
-              "width": 260,
-              "height": 130
+              "width": 410,
+              "height": 240
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "870cec81-98e9-49a8-b319-ed32781a0713",
             "zIndex": -1,
+            "id": "870cec81-98e9-49a8-b319-ed32781a0713",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -351,193 +351,6 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Tijd ophalen",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Tijd ophalen"
-            ],
-            "id": "e92ffd7a-8a18-4417-969d-6aa53ca48225",
-            "source": {
-              "cell": "e0648483-afd5-49fc-94cf-af62bdf8e4a8",
-              "port": "fedce30d-97be-4f08-be8c-69aa319a4b86"
-            },
-            "target": {
-              "cell": "80deed04-db03-4a42-80ad-380ca507db70",
-              "port": "e8385817-b81d-433a-86de-3345f248c6f3"
-            },
-            "vertices": [
-              {
-                "x": 660,
-                "y": 240
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "FastAPI",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "279a8f6f-a4ff-4d93-9a2a-9de09e5b49cc",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Denial of service",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 8,
-                  "score": ""
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 0,
-                "denialOfService": 1
-              }
-            },
-            "labels": [
-              "FastAPI"
-            ],
-            "id": "bb29054f-dba8-411a-85ef-451a0307c446",
-            "source": {
-              "cell": "80deed04-db03-4a42-80ad-380ca507db70",
-              "port": "f8d9898b-5b97-4670-9f09-b1c0e16b5bd3"
-            },
-            "target": {
-              "cell": "3ffc50a7-4518-4625-bca9-a2a36e77d368",
-              "port": "22994a16-b641-4089-8832-fed202ea5634"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "FastAPI",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "51a6f40a-04da-4b8d-b73d-1cd28565071d",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Denial of service",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 10,
-                  "score": ""
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 0,
-                "denialOfService": 1
-              }
-            },
-            "labels": [
-              "FastAPI"
-            ],
-            "id": "00f8f8ca-d7db-41d8-a41f-1f13fecc4da7",
-            "source": {
-              "cell": "3ffc50a7-4518-4625-bca9-a2a36e77d368",
-              "port": "9e85cd73-ccae-4a7e-8523-9588bb8f26e6"
-            },
-            "target": {
-              "cell": "80deed04-db03-4a42-80ad-380ca507db70",
-              "port": "f8d9898b-5b97-4670-9f09-b1c0e16b5bd3"
-            },
-            "vertices": [
-              {
-                "x": 220,
-                "y": 490
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
                 "stroke": "red",
                 "strokeWidth": 2.5,
                 "targetMarker": {
@@ -625,7 +438,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "FastAPI",
+              "name": "Data Flow",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -638,299 +451,16 @@
               "threats": []
             },
             "labels": [
-              "FastAPI"
+              "Data Flow"
             ],
-            "id": "eb4dd0b9-61a2-4462-a116-6387897e52c5",
+            "id": "62bed727-1cdd-4e55-adab-b5dc2f23a3a3",
             "source": {
-              "cell": "0bbf018d-87fd-4993-bca5-f5b13c1f1850",
-              "port": "ee8bd9cd-ba54-4a8c-8e15-2bababfc6727"
-            },
-            "target": {
-              "cell": "4c60b104-801d-4c11-8e13-8f0fc2f32c2b",
-              "port": "9d377160-26a0-423c-ac84-5337872fed15"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "FastAPI",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "FastAPI"
-            ],
-            "id": "da0c71ad-ad92-4489-a53a-2f5c98868906",
-            "source": {
-              "cell": "b5463b70-ed3b-40e3-9414-860e81b90baa",
-              "port": "ee8bd9cd-ba54-4a8c-8e15-2bababfc6727"
-            },
-            "target": {
-              "cell": "4c60b104-801d-4c11-8e13-8f0fc2f32c2b",
-              "port": "7271ace1-ea34-4393-a731-5ddcc2b5b3cd"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "FastAPI",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "FastAPI"
-            ],
-            "id": "927f479c-5d2c-4fba-8471-d542d415a124",
-            "source": {
-              "cell": "4c60b104-801d-4c11-8e13-8f0fc2f32c2b",
-              "port": "9d377160-26a0-423c-ac84-5337872fed15"
+              "cell": "bb71bffd-d13c-4d8e-8d7a-676a504437d2",
+              "port": "5b04f2a7-f122-4266-a899-6becea153ea0"
             },
             "target": {
               "cell": "80deed04-db03-4a42-80ad-380ca507db70",
-              "port": "e8385817-b81d-433a-86de-3345f248c6f3"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "FastAPI",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "FastAPI"
-            ],
-            "id": "0f909338-fb5b-4602-a7e5-e7b5a8bb3f86",
-            "source": {
-              "cell": "ca1d121d-f543-4b95-9a84-c83db6a93452",
-              "port": "9ec895d6-49bd-4d39-9a3b-784b41fa5fb5"
-            },
-            "target": {
-              "cell": "3ffc50a7-4518-4625-bca9-a2a36e77d368",
-              "port": "feefcff2-4f77-4233-b0ad-118b811d1601"
-            },
-            "vertices": [
-              {
-                "x": 840,
-                "y": 340
-              }
-            ]
-          },
-          {
-            "position": {
-              "x": 910,
-              "y": 190
-            },
-            "size": {
-              "width": 60,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "TimeServer"
-              },
-              "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "strokeDasharray": "4 3"
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "zIndex": 11,
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "7c2f55cf-147b-43bb-8a63-bb67fbea589d"
-                },
-                {
-                  "group": "right",
-                  "id": "e8385817-b81d-433a-86de-3345f248c6f3"
-                },
-                {
-                  "group": "bottom",
-                  "id": "f8d9898b-5b97-4670-9f09-b1c0e16b5bd3"
-                },
-                {
-                  "group": "left",
-                  "id": "fedce30d-97be-4f08-be8c-69aa319a4b86"
-                }
-              ]
-            },
-            "id": "e0648483-afd5-49fc-94cf-af62bdf8e4a8",
-            "data": {
-              "type": "tm.Process",
-              "name": "TimeServer",
-              "description": "",
-              "outOfScope": true,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": [
-                {
-                  "id": "9128b172-d3f6-4efd-b654-20cf20a65529",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Denial of service",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 3,
-                  "score": ""
-                }
-              ],
-              "threatFrequency": {
-                "spoofing": 0,
-                "tampering": 0,
-                "repudiation": 0,
-                "informationDisclosure": 0,
-                "denialOfService": 1,
-                "elevationOfPrivilege": 0
-              }
+              "port": "7c2f55cf-147b-43bb-8a63-bb67fbea589d"
             }
           },
           {
@@ -1064,8 +594,8 @@
                 "text": "Dashboard"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1162,12 +692,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "e410a7aa-6356-418d-aee0-b45eb6f6540b",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -1655,12 +1207,286 @@
               "providesAuthentication": false,
               "threats": []
             }
+          },
+          {
+            "position": {
+              "x": 760,
+              "y": 440
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "FastAPI"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "8fe4a06f-3878-4030-b690-6cc1c2e7cc84"
+                },
+                {
+                  "group": "right",
+                  "id": "517e51b1-a68d-4254-8f93-b1b30c4f898a"
+                },
+                {
+                  "group": "bottom",
+                  "id": "0bfa5849-2995-49e6-a9c4-d442ed2bb046"
+                },
+                {
+                  "group": "left",
+                  "id": "5b04f2a7-f122-4266-a899-6becea153ea0"
+                }
+              ]
+            },
+            "id": "bb44ae41-d5ca-4d10-a075-9de9f7375fa7",
+            "zIndex": 18,
+            "data": {
+              "type": "tm.Actor",
+              "name": "FastAPI",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "4115917e-4e13-46a9-aa9f-96832455f8c4",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 16,
+                  "score": ""
+                },
+                {
+                  "id": "577d5232-2361-4849-b17c-087da3a97e31",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 17,
+                  "score": ""
+                },
+                {
+                  "id": "6b406be1-dfc3-4e45-9467-94ab72bc50ef",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 18,
+                  "score": ""
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 860,
+              "y": 180
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "TimeServer"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "8fe4a06f-3878-4030-b690-6cc1c2e7cc84"
+                },
+                {
+                  "group": "right",
+                  "id": "517e51b1-a68d-4254-8f93-b1b30c4f898a"
+                },
+                {
+                  "group": "bottom",
+                  "id": "0bfa5849-2995-49e6-a9c4-d442ed2bb046"
+                },
+                {
+                  "group": "left",
+                  "id": "5b04f2a7-f122-4266-a899-6becea153ea0"
+                }
+              ]
+            },
+            "id": "bb71bffd-d13c-4d8e-8d7a-676a504437d2",
+            "zIndex": 19,
+            "data": {
+              "type": "tm.Actor",
+              "name": "TimeServer",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
           }
         ]
       }
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 12
+    "threatTop": 18
   }
 }
