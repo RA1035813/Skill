@@ -690,192 +690,6 @@
             "labels": [
               "http"
             ],
-            "id": "09539978-bd59-4d05-873f-7a1af4aba67d",
-            "source": {
-              "x": 450,
-              "y": 270
-            },
-            "target": {
-              "cell": "4c60b104-801d-4c11-8e13-8f0fc2f32c2b",
-              "port": "d1f24b8c-8923-4431-ac90-93dad17694f9"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "http",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "http"
-            ],
-            "id": "f73310ea-bcae-4b64-bdf8-e9c997917845",
-            "source": {
-              "cell": "4c60b104-801d-4c11-8e13-8f0fc2f32c2b",
-              "port": "9d377160-26a0-423c-ac84-5337872fed15"
-            },
-            "target": {
-              "cell": "4ea691eb-4114-443a-a08c-8ee641a36bf2",
-              "port": "4c73687c-02c8-4771-b5bb-c484546de68f"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "GPIO pin",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "GPIO pin"
-            ],
-            "id": "42cc3475-f8ef-4067-ac8c-6afbe7a2fea5",
-            "source": {
-              "x": 400,
-              "y": 70
-            },
-            "target": {
-              "cell": "4c60b104-801d-4c11-8e13-8f0fc2f32c2b",
-              "port": "f9f99f12-2f7d-401d-bf61-1533950622d7"
-            },
-            "vertices": [
-              {
-                "x": 470,
-                "y": 90
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "GPIO pin",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "GPIO pin"
-            ],
-            "id": "c4651666-a6c6-4129-bea0-028cda55c0fd",
-            "source": {
-              "x": 630,
-              "y": 80
-            },
-            "target": {
-              "cell": "4c60b104-801d-4c11-8e13-8f0fc2f32c2b",
-              "port": "f9f99f12-2f7d-401d-bf61-1533950622d7"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "http",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "http"
-            ],
             "id": "2130be3b-1b98-4a73-980a-c94ac772809f",
             "source": {
               "cell": "ca1d121d-f543-4b95-9a84-c83db6a93452",
@@ -1387,141 +1201,6 @@
           },
           {
             "position": {
-              "x": 620,
-              "y": 280
-            },
-            "size": {
-              "width": 112.5,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "AI model"
-              },
-              "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "actor",
-            "zIndex": 16,
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "f9f99f12-2f7d-401d-bf61-1533950622d7"
-                },
-                {
-                  "group": "right",
-                  "id": "7271ace1-ea34-4393-a731-5ddcc2b5b3cd"
-                },
-                {
-                  "group": "bottom",
-                  "id": "d1f24b8c-8923-4431-ac90-93dad17694f9"
-                },
-                {
-                  "group": "left",
-                  "id": "9d377160-26a0-423c-ac84-5337872fed15"
-                }
-              ]
-            },
-            "id": "4c60b104-801d-4c11-8e13-8f0fc2f32c2b",
-            "data": {
-              "type": "tm.Actor",
-              "name": "AI model",
-              "description": "",
-              "isTrustBoundary": false,
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "providesAuthentication": false,
-              "threats": [
-                {
-                  "id": "8017257f-ec15-42cc-a3a2-eda310d4bae4",
-                  "title": "No Suggestions available",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Spoofing",
-                  "description": "No suggestions available for this context. Add one manually please",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 12,
-                  "score": ""
-                }
-              ],
-              "threatFrequency": {
-                "spoofing": 1,
-                "repudiation": 0
-              }
-            }
-          },
-          {
-            "position": {
               "x": 733,
               "y": 17
             },
@@ -1764,19 +1443,6 @@
                   "new": true,
                   "number": 25,
                   "score": ""
-                },
-                {
-                  "id": "cbaadce7-42dc-40a8-813a-40d5a483a0f9",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Spoofing",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 26,
-                  "score": ""
                 }
               ]
             }
@@ -1961,12 +1627,132 @@
                 "elevationOfPrivilege": 1
               }
             }
+          },
+          {
+            "position": {
+              "x": 580,
+              "y": 250
+            },
+            "size": {
+              "width": 140,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "AI model"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "5788c198-17da-4cf7-8a7e-4660f196cc00"
+                },
+                {
+                  "group": "right",
+                  "id": "b8a9e94d-c10d-4eae-9236-b71cc64c5a14"
+                },
+                {
+                  "group": "bottom",
+                  "id": "e201e27b-b75f-4e68-9860-51bc292a9fe6"
+                },
+                {
+                  "group": "left",
+                  "id": "94d533a2-5718-4a42-9120-5af3acc2e63a"
+                }
+              ]
+            },
+            "id": "bcadc322-d6d8-4320-811c-73a3a81d39e1",
+            "zIndex": 21,
+            "data": {
+              "type": "tm.Process",
+              "name": "AI model",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
           }
         ]
       }
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 26
+    "threatTop": 31
   }
 }
